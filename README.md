@@ -69,4 +69,4 @@ avg_price_by_city = data.groupby('city')['price_display'].mean().reset_index()
 bar_chart = px.bar(avg_price_by_city.sort_values('price_display', ascending=False).head(10),
                    x='city', 
                    y='price_display', 
-                   title='Top 10 Cities by Average Displayed Price') ```
+                   title='Top 10 Cities by Average Displayed Price') 
