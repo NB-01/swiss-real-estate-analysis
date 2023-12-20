@@ -1,57 +1,36 @@
 Swiss Real Estate Analysis
-==============================
 
-A short description of the project.
+Project Overview
 
-Project Organization
-------------
+This project aims to analyze the Swiss real estate market by scraping data from various real estate websites, focusing on rents and buying prices. The primary objective is to calculate buy-to-rent ratios in major Swiss cities and visualize these ratios geographically using choropleth maps. This analysis will provide insights into the Swiss real estate market, particularly beneficial for investors and researchers interested in understanding market trends and investment potentials in different regions.
 
-    ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
-    ├── README.md          <- The top-level README for developers using this project.
-    ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
-    │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-    │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
-    │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
-    │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+Objectives
 
+    To scrape real estate data (rental and buying prices) from various Swiss real estate websites.
+    To process and clean the collected data for accurate analysis.
+    To calculate the buy-to-rent ratios in major Swiss cities.
+    To visualize the data using choropleth maps, highlighting regional differences and trends.
 
---------
+Data Sources
 
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+Data will be collected from various Swiss real estate websites, including but not limited to:
+
+    Flatfox
+    Homegate
+    Immoscout24
+
+Tools and Technologies
+
+    Data Scraping: Python (BeautifulSoup, Selenium)
+    Data Analysis and Processing: Python (Pandas, NumPy)
+    Visualization: Python (Matplotlib, Plotly) for choropleth maps
+    Version Control: Git, GitHub
+
+Project Structure
+
+    data/: Raw and processed data
+    notebooks/: Jupyter notebooks for data analysis and visualization
+    scripts/: Scripts for data scraping and processing
+    output/: Output data, figures, and choropleth maps
+    src/: Source code for custom Python modules
+    docs/: Additional project documentation
